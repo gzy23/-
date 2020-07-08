@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world</title>
+</head>
+<body background="static/background.jpg" bgproperties="fixed">
+{% extends "bootstrap/base.html" %}
+{% block title %}Flasky{% endblock %}
+{% block content %}
+        <div class="container " style="padding-top: 280px;padding-left: 320px;">
+            <div class="input-group input-group-lg">
+             <span class="input-group-addon" for="username" style="width: 110px;">用户名</span>
+             <input type="text" id="username" class="form-control" placeholder="请输入用户名" style="width: 300px;">
+         </div>
+         <div class="input-group input-group-lg" style="padding-top: 20px;padding-bottom: 20px;">
+             <span class="input-group-addon" for="password" style="width: 110px;">密码 </span>
+             <input type="password" id="password" class="form-control" placeholder="请输入密码" style="width: 300px;">
+         </div>
+         <div class="input-group input-group-lg">
+             <span class="input-group-addon" for="agpassword" style="width: 110px;">确认密码 </span>
+             <input type="password" id="agpassword" class="form-control" placeholder="请再次输入密码" style="width: 300px;">
+         </div>
+         <div class="input-group input-group-lg" style="padding-top: 20px;padding-bottom: 20px;">
+             <select class="form-control input-group-addon" style="width: 180px;">
+			<option>你喜欢的明星是？</option>
+			<option>你初中学校是？</option>
+			<option>你亲人的名字是？</option>
+			<option>你生日日期是？</option>
+		    </select>
+             <input type="password" class="form-control" placeholder="请输入安全问题答案" style="width: 300px;">
+         </div>
+            <button type="button" class="btn btn-default btn-lg">注册</button>
+        </div>
+{% endblock %}
+</body>
+
+</html>
